@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<!-- Created by Rio Weber 2015 -->
+<!-- The Nu/con Group -->
+<html lang="en">
+
+<head>
+   <title>Precise Design Inc.</title>
+   <!-- code for iPhone -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta name="keywords" content="Precise Design, Precise Design Inc., Design, Precise" />
+
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Precise Design Inc.">
+   <meta name="author" content="Unaxy.com">
+
+   <!-- Favicon.png-->
+   <link rel="shortcut icon" href="favicon.jpg">
+   <!-- CSS ==========-->
+   <!-- Latest compiled and minfied CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+   <!-- Font-Awesome -->
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Fonts -->
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+
+   <!-- CAROUSEL FILES -->
+   <!-- Custom styles for this template -->
+   <link rel="stylesheet" type="text/css" href="https://getbootstrap.com/examples/carousel/carousel.css">
+
+   <!-- MY CUSTOM CSS-->
+   <link rel="stylesheet" type="text/css" href="css/precisedesign.css">
+
+   <!-- JAVASCRIPT ===== Latest compiled and minified JavaScript -->
+   <!-- jQuery -->
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <!-- Bootstrap Core JavaScript -->
+   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" class="index">
+   <h1 id="logo">
+      <a href="index.html">
+         <img id="logoo" src="images/Logo/Precise_logo.jpg" style="width:93%; background-color:#fff; padding:35px 6px 0 6px;"></a>
+   </h1>
+   <!-- Navigation -->
+   <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+         </div>
+
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul id="Top_navbar_UL" class="nav navbar-nav">
+               <li class="page-scroll">
+                  <a class="topbarFixed" href="#portfolio">Home </a>
+               </li>
+               <li class="page-scroll">
+                  <a class="topbarFixed" href="gallery.php">Gallery</a>
+               </li>
+               <li id="Logo_Spacer"></li>
+               <!-- Space for Logo -->
+               </li>
+               <li class="page-scroll page-scroll3">
+                  <a class="topbarFixed" href="#about">About Us</a>
+               </li>
+               <li class="page-scroll">
+                  <a class="topbarFixed" href="#contact">Contact</a>
+               </li>
+            </ul>
+         </div>
+         <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+   </nav>
+
+   <style>
+      video {
+         width: 100%;
+         z-index: -100;
+         background: url("frame.png") no-repeat;
+         background-size: cover;
+         transition: 1s opacity;
+      }
+      
+      #videoContainer {
+         width: 100%;
+         overflow: hidden;
+         max-height: 507px;
+      }
+      
+      #contact {
+         margin-top: 90px;
+      }
+      
+      @media (max-width: 768px) {
+         #contact {
+            margin-top: 80px;
+         }
+      }
+   </style>
+   <!-- Banner Wrapper -->
+   <div style="overflow:hidden;">
+      <!-- The slider's images (as well as its behavior) can be configured at the top of "assets/js/main.js". -->
+      <div id="slider" style="position: relative;">
+         <div id="videoContainer">
+            <video autoplay id="aboutImage" poster="" id="bgvid" loop>
+                  <source src="Design.m4v" type="video/mp4">
+                  <!--source src="cement_crew_works.mp4" type="video/mp4"-->
+              </video>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- CHANGE SERVICES ==========================-->
+   <!-- <div id="services" style="margin-top:40px; background-color:#1C1C1C;">
+        <div class="text-center" style="letter-spacing:2px;text-transform: uppercase;">
+            <h2 style="color:#FFF;">SERVICES</h2>
+        </div>
+    </div> -->
+   <section class="servicesMenu">
+      <div class="btn-group btn-group-justified" role="group">
+         <div class="btn-group" role="group">
+            <button onclick="show_Kitchens()" type="button" class="btn btn-default servicesButtons">Kitchens</button>
+         </div>
+         <div class="btn-group" role="group">
+            <button onclick="show_Bathrooms()" type="button" class="btn btn-default servicesButtons">Bathrooms</button>
+         </div>
+         <div class="btn-group" role="group">
+            <button onclick="show_Renovations()" type="button" class="btn btn-default servicesButtons">Renovations</button>
+         </div>
+      </div>
+   </section>
+
+   <!-- Services 1 =====================-->
+   <div id="services_1" class="services">
+      <div class="container services3info">
+         <!-- Three columns of text below the carousel -->
+         <div class="row">
+            <div class="col-sm-4 col-xs-6">
+               <img class="img-circle" src="Pictures/photo_11.png" alt="Generic placeholder image">
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-sm-4 col-xs-6 intro" style="padding:0 0;">
+               <img class="img-circle" src="Pictures/photo_13.jpg" alt="Generic placeholder image">
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-sm-4 intro">
+               <img class="img-circle" src="Pictures/photo_10.jpg" alt="Generic placeholder image">
+            </div>
+            <!-- /.col-lg-4 -->
+         </div>
+         <!-- /.row -->
+
+         <div class="row" style="margin-top:20px;">
+            <div class="col-sm-12" style="padding:0 0;">
+               <h1 id="services_Title-concrete" class="services_Title" style="text-transform:uppercase; font-size:2em;">Kitchens</h1>
+               <p style="min-height:96px;">We Can Design Any Kitchen From The Ground Up. Using our expertise in kitchen layouts and in the newest kitchen and refrigeration technologies, that room you used to just cook in, will become the main room you and your family spend time
+                  in the house. We Also Can Accommodate Any Green Technology Appliance Request For Our Clients, As It Is A Great Way To Save Money On Electric Bills And To Minimize A Harmful Impact On The Environment.
+               </p>
+               <br>
+               <h1 id="services_Title-concrete" class="services_Title" style="text-transform:uppercase; font-size:2em;">Precise Design Services</h1>
+               <p style="max-width:320px; margin:0 auto; list-style-type: none;">
+                  Full Apartment and Home Renovations<br> Kitchen Renovation and Remodel<br> Bathroom Renovation and Remodel<br> Finish carpentry<br> Custom Cabinets<br> Custom Closets<br> Hardwood Flooring<br> Tile Works<br> Natural and Engineered Stone
+                  Countertops<br> Interior and Exterior Painting<br> Custom Decks and Patios<br>
+               </p>
+               <br>
+               <br>
+               <hr style="border-color:#AAA;" width="30%">
+               <p style="font-size:1.8em;">Ask about our Designers and appliance specialist.</p>
+            </div>
+            <!-- /.col-lg-12 -->
+         </div>
+         <!-- /.row -->
+      </div>
+      <!-- /.Services -->
+   </div>
+
+   <!-- Services 2 =====================-->
+   <div id="services_2" class="services" style="display:none;">
+      <div class="container services3info">
+         <!-- Three columns of text below the carousel -->
+         <div class="row">
+            <div class="col-sm-4 col-xs-6">
+               <img class="img-circle" src="Pictures/photo_6.jpg" alt="Generic placeholder image">
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-sm-4 col-xs-6 intro" style="padding:0 0;">
+               <img class="img-circle" src="Pictures/photo_8.jpg" alt="Generic placeholder image">
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-sm-4 intro">
+               <img class="img-circle" src="Pictures/photo_11.png" alt="Generic placeholder image">
+            </div>
+            <!-- /.col-lg-4 -->
+         </div>
+         <!-- /.row -->
+
+         <div class="row" style="margin-top:20px;">
+            <div class="col-sm-12" style="padding:0 0;">
+               <h1 id="services_Title-concrete" class="services_Title" style="text-transform:uppercase; font-size:2em;">Bathrooms</h1>
+               <p style="min-height:96px;">We can transform the smallest and most basic room in your house into a relaxing open space that will look as beautiful as any other room in your house. We can create a custom bathroom according to your personal requests or just update the
+                  current layout to a more modern and cost efficient design.</p>
+               <br>
+               <h1 id="services_Title-concrete" class="services_Title" style="text-transform:uppercase; font-size:2em;">Precise Design Services</h1>
+               <p style="max-width:320px; margin:0 auto; list-style-type: none;">
+                  Full Apartment and Home Renovations<br> Kitchen Renovation and Remodel<br> Bathroom Renovation and Remodel<br> Finish carpentry<br> Custom Cabinets<br> Custom Closets<br> Hardwood Flooring<br> Tile Works<br> Natural and Engineered Stone
+                  Countertops<br> Interior and Exterior Painting<br> Custom Decks and Patios<br>
+               </p>
+               <br>
+               <br>
+               <hr style="border-color:#AAA;" width="30%">
+               <p style="font-size:1.8em;">Ask about our Designers and appliance specialist.</p>
+            </div>
+            <!-- /.col-lg-12 -->
+         </div>
+         <!-- /.row -->
+      </div>
+      <!-- /.Services -->
+   </div>
+
+   <!-- Services 3 =====================-->
+   <div id="services_3" class="services" style="display:none;">
+      <div class="container services3info">
+         <!-- Three columns of text below the carousel -->
+         <div class="row">
+            <div class="col-sm-4 col-xs-6">
+               <img class="img-circle" src="Pictures/photo_13.jpg" alt="Generic placeholder image">
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-sm-4 col-xs-6 intro" style="padding:0 0;">
+               <img class="img-circle" src="Pictures/photo_7.jpg" alt="Generic placeholder image">
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-sm-4 intro">
+               <img class="img-circle" src="Pictures/photo_8.jpg" alt="Generic placeholder image">
+            </div>
+            <!-- /.col-lg-4 -->
+         </div>
+         <!-- /.row -->
+
+         <div class="row" style="margin-top:20px;">
+            <div class="col-sm-12" style="padding:0 0;">
+               <h2 id="services_Title-concrete" class="services_Title" style="text-transform:uppercase; font-size:2em;">Complete Renovations</h2>
+
+               <p style="min-height:96px;">We go beyond the typical full service contractors by providing in-depth design and building services. We will handle your entire project including all framing, sheetrock, finish carpentry, custom built-ins, hardwood floors, doors, painting,
+                  stone work such as marble, granite, etc. Our team is highly specialized in complete renovation and remodeling.</p>
+               <br>
+               <h1 id="services_Title-concrete" class="services_Title" style="text-transform:uppercase; font-size:2em;">Precise Design Services</h1>
+               <p style="max-width:320px; margin:0 auto; list-style-type: none;">
+                  Full Apartment and Home Renovations<br> Kitchen Renovation and Remodel<br> Bathroom Renovation and Remodel<br> Finish carpentry<br> Custom Cabinets<br> Custom Closets<br> Hardwood Flooring<br> Tile Works<br> Natural and Engineered Stone
+                  Countertops<br> Interior and Exterior Painting<br> Custom Decks and Patios<br>
+               </p>
+               <br>
+               <br>
+               <hr style="border-color:#AAA;" width="30%">
+               <p style="font-size:1.8em;">Ask about our Designers and appliance specialist.</p>
+            </div>
+            <!-- /.col-lg-12 -->
+         </div>
+         <!-- /.row -->
+      </div>
+      <!-- /.Services -->
+   </div>
+
+
+   <!-- ABOUT US -->
+   <div id="about" class="text-center" style="background-color:#00A5C7; padding-bottom:15px;">
+      <div class="container">
+         <h1 style="color:white;">ABOUT US</h1>
+         <hr width="60%">
+         <div class="col-md-6 col-sm-12">
+            <p style="color:#FFF;font-size:17px;">Precise Design Inc. is a family owned and operated home improvement business in the greater New York area.<br /> President <strong>Aldemar Barona</strong> and Vice President <strong>Juan Diego Lemos</strong> have experience and skill in all
+               aspects of construction. Aldemar having worked in the plumbing industry for 12 years and Juan Diego as a certified electrician gives them a slight advantage when it comes to handling a project. Together, they have more than 30 years combined
+               experience in the home improvement industry. After many years of working together and building a family type friendship. they decided to put their talents together and open Precise Design Inc. and have been working together successfully
+               ever since.
+            </p>
+            <br>
+         </div>
+         <div class="col-md-6 col-sm-12">
+            <p style="color:#FFF;font-size:17px;">Precise Designs Inc. specializes in remodeling and general interior contracting services for homeowners, landlords and management companies. We take pride in our personalized customer service for each client. Our sole focus throughout the
+               building process is to surpass client expectations, faithfully delivering the design intent of the architect or designer in a timely and cost efficient manner. The company’s seasoned project managers, field supervisors and in-house skilled
+               craftsmen bring their vast experience to creating rapid and efficient solutions to any unforeseen challenges and to keeping our projects on schedule and within budget. Our goal is to begin a new and lasting relationship with every client
+               we serve and with every professional project partner whose vision we deliver.
+            </p>
+            <br>
+         </div>
+         <br>
+         <h2 style="color:white;clear:both">OUR MISSION</h2>
+         <p style="color:white; font-size:17px;" id="extraText">To provide our customers with the most professional and reasonable estimates, project management, and production experience guaranteeing our clients well-timed project completion with an uncompromising quality of work.</p>
+         <br>
+         <h2 style="color:white;clear:both">OUR VISION</h2>
+         <p style="color:white; font-size:17px;" id="extraText">We aim to create a long lasting impression with every home owner we do business with through our high quality of work, professionalism, and by treating each project with the utmost importance and attention to detail.</p>
+         <hr width="60%">
+
+      </div>
+   </div>
+
+   <!-- Carousel
+    ================================================== -->
+   <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:0;">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+         <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+         <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+         <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+         <div class="item active">
+            <img class="first-slide" src="Pictures/photo_6.jpg" alt="First slide">
+            <div class="container">
+               <div class="carousel-caption">
+                  <!-- <h1>Title 1</h1> -->
+               </div>
+            </div>
+         </div>
+         <div class="item">
+            <img class="second-slide" src="Pictures/photo_7.jpg" alt="Second slide">
+            <div class="container">
+               <div class="carousel-caption">
+                  <!-- <h1>Title 2</h1> -->
+               </div>
+            </div>
+         </div>
+         <div class="item">
+            <img class="third-slide" src="Pictures/photo_9.jpg" alt="Second slide">
+            <div class="container">
+               <div class="carousel-caption">
+                  <!-- <h1>Title 3</h1> -->
+               </div>
+            </div>
+         </div>
+         <div class="item">
+            <img class="fourth-slide" src="Pictures/photo_10.jpg" alt="Third slide">
+            <div class="container">
+               <div class="carousel-caption">
+                  <!-- <h1>Title 4</h1> -->
+               </div>
+            </div>
+         </div>
+         <div class="item">
+            <img class="fith-slide" src="Pictures/photo_5.jpg" alt="Third slide">
+            <div class="container">
+               <div class="carousel-caption">
+                  <!-- <h1>Title 5</h1> -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <a class="left carousel-control" href="//getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="prev">
+         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="//getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+      </a>
+   </div>
+   <!-- /.carousel -->
+   <!-- /.banner-wrapper -->
+   <!-- /.CAROUSEL =============-->
+
+   <!-- Contact & Review Section ============================== -->
+   <style>
+      #contactForm {
+         color: #BBB;
+      }
+      
+      #contactForm input,
+      #contactForm textarea {
+         background-color: #1C1C1C;
+         color: #FFF;
+         border-radius: 0;
+      }
+   </style>
+   <section id="contact" style="background-color:#1C1C1C;">
+      <div class="container" style="padding: 60px 0 60px; 0">
+         <!-- CONTACT -->
+         <div class="col-xs-12">
+            <div class="row">
+               <div class="col-xs-12 text-center">
+                  <h2 style="color:#FFF">Contact Us</h2>
+               </div>
+            </div>
+            <hr style="border-color:#AAA;" width="90%">
+            <div class="row">
+               <div class="col-lg-10 col-lg-offset-1">
+                  <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                  <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                  <form name="sentMessage" id="contactForm" novalidate>
+                     <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                           <label>Name</label>
+                           <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                           <p class="help-block text-danger"></p>
+                        </div>
+                     </div>
+                     <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                           <label>Email Address</label>
+                           <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                           <p class="help-block text-danger"></p>
+                        </div>
+                     </div>
+                     <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                           <label>Phone Number</label>
+                           <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                           <p class="help-block text-danger"></p>
+                        </div>
+                     </div>
+                     <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                           <label>Message : this message will be sent to ABarona</label>
+                           <textarea id="message" rows="5" class="form-control" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
+                           <p class="help-block text-danger"></p>
+                        </div>
+                     </div>
+                     <br>
+                     <div id="success"></div>
+                     <div class="row">
+                        <div class="form-group col-xs-12">
+                           <button type="submit" class="btn btn-success btn-lg">Send</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <!-- REVIEWS -->
+         <style>
+            #rbwidgetdiv {
+               margin: 0 auto;
+            }
+         </style>
+         <div class="col-xs-12">
+            <div class="row">
+               <div class="col-xs-12 text-center">
+                  <h2 style="color:#FFF">Reviews</h2>
+               </div>
+            </div>
+            <hr style="border-color:#AAA;" width="90%">
+            <div class="col-xs-12" style="text-align:center;">
+               <!-- Start reviewbuddy code -->
+               <a href="//precisedesign.reviewbuddy.com/" id="reviewbuddylink">Open customer reviews about Precise Design</a>
+               <script type="text/javascript">
+                  (function() {
+                     var rb = document.createElement('script');
+                     rb.type = 'text/javascript';
+                     rb.async = true;
+                     rb.src = '//precisedesign.reviewbuddy.com/widget.js';
+                     var s = document.getElementsByTagName('script')[0];
+                     s.parentNode.insertBefore(rb, s);
+                  })();
+               </script>
+               <!-- End reviewbuddy code -->
+            </div>
+         </div>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+      <script type="text/javascript">
+         // Set the configuration for app
+         var config = {
+            apiKey: "AIzaSyDG9kbQAD5FwxigN2bcA9yFnVC3XGV9rbU",
+            authDomain: "reviews-25b08.firebaseapp.com",
+            databaseURL: "https://reviews-25b08.firebaseio.com",
+            storageBucket: "precisecreates-riow.c9users.io"
+         };
+         firebase.initializeApp(config);
+
+         // Get a reference to the database service
+         var database = firebase.database();
+
+         var reviews = database.ref("/reviews");
+
+         reviews.once('value').then(function(snapshot) {
+            console.log(snapshot.val());
+         });
+
+         var domain = document.location.host.replace(/\./g, ' ');
+
+         reviews.child(domain).push('New Review');
+      </script>
+   </section>
+
+   <hr style="border-color:#AAA;" width="90%">
+
+   <section style="background-color:#FFF;">
+      <div class="container" style="padding: 60px 0 60px; 0">
+         <div class="container" style="margin:0 auto; width:325px; padding-bottom:30px; padding-top:5px; background:#FFF; box-shadow:0 0 40px 5px #00a5c7;">
+            <div class="col-xs-12">
+               <div class="row">
+                  <div class="col-xs-12 text-center">
+                     <h2 style="color:#444; font-weight:700;">HomeAdvisor</h2>
+                     <hr style="border-color:#AAA;" width="90%">
+                     <p style="color:#444; font-size: 1.5em">SCREENED & APPROVED</p>
+                  </div>
+               </div>
+            </div>
+            <style>
+               #seal_of_approval {
+                  color: #2d3f48;
+                  padding: 4px;
+                  padding-top: 0;
+                  background-color: #FFF;
+                  border-bottom-left-radius: 5px;
+                  border-bottom-right-radius: 5px;
+                  width: 160px;
+                  margin: 0 auto;
+                  border: 1px solid #ccc;
+                  border-top: none;
+               }
+            </style>
+            <div class="col-xs-12 text-center">
+               <a href="//www.homeadvisor.com/rated.PreciseDesignInc.42174020.html" style="display:block; margin: 0 auto;">
+                  <img alt="HomeAdvisor Screened Pro" style="display:block; margin: 0 auto;" src="//www.homeadvisor.com/images/sp-badges/soap-border.png?sp=42174020&key=1d9507e9a1267501bde290e52b8b70b0" />
+                  <p id="seal_of_approval">Precise Design</p>
+               </a>
+            </div>
+         </div>
+   </section>
+
+   <hr style="border-color:#AAA;" width="90%">
+
+   <!-- FOOTER ============================= FOOTER ========== FOOTER =======
+==============================================
+Location | Connect with us (social icons)| About Example
+======
+Google Map
+======
+Copy Right =========================-->
+   <footer class="text-center">
+      <div class="footer-above" style="box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);z-index:1000;">
+         <div class="container">
+            <div class="row">
+               <div class="footer-col col-md-4">
+                  <h3>Location</h3>
+                  <p>45-52 164th Street<br>Flushing, NY 11358 US</p>
+                  <p><a href="//www.google.com/maps/place/45-52+164th+St,+Flushing,+NY+11358" target="new">Google Map It »</a></p>
+               </div>
+               <div class="footer-col col-md-4">
+                  <h3>Connect With Us</h3>
+                  <ul class="list-inline">
+                     <li>
+                        <a href="//www.facebook.com/precisecreates/" class="btn-social btn-outline" target="new"><i class="fa fa-fw fa-facebook"></i></a>
+                     </li>
+                     <li>
+                        <a href="//instagram.com/preciseny" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+                     </li>
+                     <li>
+                        <a href="//www.linkedin.com/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer-col col-md-4">
+                  <h3>More About Us</h3>
+                  <p>Find out more. Call today. <br><span style="color:#00A5C7;">(347) 759-2585</span></p>
+                  <p style="min-width: 310px;">Email us.<br><span style="color:#00A5C7;">Aldemar@precisecreates.com </span></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- GOOGLE MAPS -->
+      <script src="//maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+      <style type="text/css">
+         @media (max-width: 768px) {
+            #map {
+               width: 100%;
+               height: 350px;
+            }
+         }
+         
+         @media (min-width: 768px) {
+            #map {
+               width: 100%;
+               height: 388px;
+            }
+         }
+      </style>
+      <script type="text/javascript">
+         // When the window has finished loading create our google map below
+         google.maps.event.addDomListener(window, 'load', init);
+
+         function init() {
+
+            // The latitude and longitude to center the map (always required)
+            var myLatlng = new google.maps.LatLng(40.754754, -73.8053287);
+
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+               // How zoomed in you want the map to start at (always required)
+               zoom: 11,
+
+               scrollwheel: false,
+
+               // The latitude and longitude to center the map (always required)
+               center: myLatlng, // Santa Barbara
+
+               // How you would like to style the map.
+               // This is where you would paste any style found on Snazzy Maps.
+               styles: [{
+                  "featureType": "administrative",
+                  "elementType": "all",
+                  "stylers": [{
+                     "visibility": "on"
+                  }, {
+                     "saturation": -100
+                  }, {
+                     "lightness": 20
+                  }]
+               }, {
+                  "featureType": "road",
+                  "elementType": "all",
+                  "stylers": [{
+                     "visibility": "on"
+                  }, {
+                     "saturation": -100
+                  }, {
+                     "lightness": 40
+                  }]
+               }, {
+                  "featureType": "water",
+                  "elementType": "all",
+                  "stylers": [{
+                     "visibility": "on"
+                  }, {
+                     "saturation": -10
+                  }, {
+                     "lightness": 30
+                  }]
+               }, {
+                  "featureType": "landscape.man_made",
+                  "elementType": "all",
+                  "stylers": [{
+                     "visibility": "simplified"
+                  }, {
+                     "saturation": -60
+                  }, {
+                     "lightness": 10
+                  }]
+               }, {
+                  "featureType": "landscape.natural",
+                  "elementType": "all",
+                  "stylers": [{
+                     "visibility": "simplified"
+                  }, {
+                     "saturation": -60
+                  }, {
+                     "lightness": 60
+                  }]
+               }, {
+                  "featureType": "poi",
+                  "elementType": "all",
+                  "stylers": [{
+                     "visibility": "off"
+                  }, {
+                     "saturation": -100
+                  }, {
+                     "lightness": 60
+                  }]
+               }, {
+                  "featureType": "transit",
+                  "elementType": "all",
+                  "stylers": [{
+                     "visibility": "off"
+                  }, {
+                     "saturation": -100
+                  }, {
+                     "lightness": 60
+                  }]
+               }]
+            };
+
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+            var contentString = '<div id="content" style="color:#1c1c1c;"><h6>Precise Design</h6><p>This is our head quarters!</p></div>';
+            var infowindow = new google.maps.InfoWindow({
+               content: contentString
+            });
+
+            var image = '//livedemo00.template-help.com/wordpress_55042/wp-content/themes/theme55042/images/marker.png';
+
+            var marker = new google.maps.Marker({
+               position: myLatlng,
+               map: map,
+               icon: image
+            });
+
+            // To add the marker to the map, call setMap();
+            marker.setMap(map);
+
+            google.maps.event.addListener(marker, 'click', function() {
+               infowindow.open(map, marker);
+            });
+
+         }
+      </script>
+      <div id="map" style="position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"></div>
+      <!-- /.Google Maps -->
+
+      <div class="footer-below">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12" style="color:#666">
+                  <p>Precise Design Inc.</p>
+                  (347) 759-2585
+                  <br>45-52 164th Street, Flushing, NY 11358 US
+                  <br>Copyright &copy; Precise Design Inc. <span id="dateTimeValue2"></span>
+                  <!-- Date -->
+                  <script type="text/javascript">
+                     window.onload = function() {
+                        var dateYear = new Date();
+                        var formattedDateYear = dateYear.getFullYear()
+
+                        var divObjectYear = document.getElementById("dateTimeValue2");
+                        divObjectYear.innerHTML = formattedDateYear;
+                     }
+                  </script>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+   <div id="scroll-top" class="scroll-top page-scroll visible-xs visble-sm">
+      <a id="scroll-topp" class="btn btn-primary" href="#page-top" style="display:none">
+         <i id="scroll-toppp" class="fa fa-chevron-up"></i>
+      </a>
+   </div>
+
+
+   <!-- Plugin JavaScript -->
+   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+   <!-- Contact Form JavaScript -->
+   <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+   <script type="text/javascript" src="js/contact_me.js"></script>
+   <!-- Custom Theme JavaScript -->
+   <script type="text/javascript" src="js/freelancer.js"></script>
+   <!-- From WAngle -->
+   <script type="text/javascript" src="js/jquery.dropotron.min.js"></script>
+
+   <!-- Services Javascript -->
+   <script type="text/javascript">
+      function show_Kitchens() {
+         $("#services_1").show();
+         $("#services_2").hide();
+         $("#services_3").hide();
+      }
+
+      function show_Bathrooms() {
+         $("#services_1").hide();
+         $("#services_2").show();
+         $("#services_3").hide();
+      }
+
+      function show_Renovations() {
+         $("#services_1").hide();
+         $("#services_2").hide();
+         $("#services_3").show();
+      }
+   </script>
+
+   <script>
+      (function(i, s, o, g, r, a, m) {
+         i['GoogleAnalyticsObject'] = r;
+         i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+         }, i[r].l = 1 * new Date();
+         a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+         a.async = 1;
+         a.src = g;
+         m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-61756765-3', 'auto');
+      ga('send', 'pageview');
+   </script>
+
+</body>
+
+</html>

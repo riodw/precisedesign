@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Email Set Up | The Nu/con Group</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+	img {
+	    border: 1px solid #ccc;
+	}
+</style>
+<body style="font-family:Tahoma, arial;font-weight:200">
+	<h2>Email Set Up for:&nbsp;&nbsp;
+		<a onclick="show_iphone()" type="button" style="cursor:pointer;color: #fff;background-color: #428bca;padding: 10px 16px;line-height: 1.33;border-radius: 6px;font-size: 18px;">iPhone</a> &nbsp;&nbsp;
+		<a onclick="show_android()" type="button" style="cursor:pointer;color: #fff;background-color: #428bca;padding: 10px 16px;line-height: 1.33;border-radius: 6px;font-size: 18px;">Android</a> &nbsp;&nbsp;
+		<a onclick="show_k9()" type="button" style="cursor:pointer;color: #fff;background-color: #428bca;padding: 10px 16px;line-height: 1.33;border-radius: 6px;font-size: 18px;">K-9</a>
+		<a onclick="show_outlook()" type="button" style="cursor:pointer;color: #fff;background-color: #428bca;padding: 10px 16px;line-height: 1.33;border-radius: 6px;font-size: 18px;">OutLook</a></h2>
+	<hr>
+	<section id="welcome">
+		<h3>Just Select How You Want to Access Your Email!&nbsp;&nbsp;&#8593;<h3>
+	</section>
+	<section id="iphone" style="display:none">
+		<ol>
+			<li>Tap "<b>Settings</b>" app</li>
+			<li>Tap "<b>Mail, Contacts, Calendars</b>"</li>
+			<li>Tap "<b>Add Account...</b>"</li>
+			<li>Tap "<b>Other</b>" (bottom option)</li>
+			<li>Tap "<b>Add Mail Account</b>"</li>
+			<li>Enter Name, address (full email <span style="color:blue">user@thenu-congroup.com</span>), and password.<br>
+			&nbsp; &nbsp; &nbsp;&nbsp;(iPhone will attempt to guess your settings. Allow ~1 minute for it to fail.)</li>
+			<li>Select <b>IMAP</b>. - (It's the default. The option you've selected will be highlighted blue.)</li>
+			<br>
+			<li>Under "<b>Incoming mail server</b>"</li>
+			<ol>
+				<li>Set "<i>hostname</i>" to <a href="http://www.thenu-congroup.com">www.thenu-congroup.com<a/></li>
+				<li>Set "<i>username</i>" to <span style="color:blue">email@thenu-congroup.com</span></li>
+				<li>Set "<i>password</i>" to your password</li>
+			</ol>
+			<br>
+			<li>Under "<b>Outgoing mail server</b>"</li>
+			<ol>
+				<li>Set "Host name" to <a href="http://www.thenu-congroup.com">www.thenu-congroup.com</a></li>
+				<li>Set "User name" to <span style="color:blue">email@thenu-congroup.com</span></li>
+				<li>Set password to your passwor</li>
+			</ol>
+			<br>
+			<li>Message "Cannot Verify Server Identity" may appear (twice)</li>
+			<li>Tap "<b>Continue</b>"</li>
+		</ol>
+	You are now ready to send and receive emails via your iPhone!
+	</section>
+	<section id="android" style="display:none">
+		<h2 class="subject2a">Using the Default Email Client</h2>
+		<ol>
+			<li>Open your email client.<br>
+				<p style="align:center;">
+					<img src="img/android_email_icon.png" title="email icon" width="200px"></p>
+			</li>
+			<li>Enter your full email address and password, as pictured below.<br>
+				<p style="align:center;"><img src="img/android_account_login.png" title="account login" width="200px"></p>
+			</li>
+			<li>Select <strong>IMAP</strong> for your account type.<br> <p style="align:center;">
+				<img src="img/android_account_type.png" title="account type" width="200px"></p>
+			</li>
+			<li>On the final account setup, enter the following information:
+				<ul>
+					<li><strong>Username</strong> - The email address you are trying to connect to</li>
+					<li><strong>Password</strong> - The password to that email address</li>
+					<li><strong>IMAP server</strong> - www.thenu-congroup.com</li>
+					<li><strong>Port</strong> - 143</li>
+					<li><strong>Security Type</strong> - None</li>
+					<li><strong>IMAP path prefix</strong> - Leave blank</li>
+				</ul>
+				<p style="align:center;"><img src="img/android_account_settings.png" title="" width="200px"></p>
+			</li>
+			<li>Click <strong>Continue</strong> and the email client will check your settings and connect to your account.</li>
+		</ol>
+	</section>
+	<section id="k9" style="display:none">
+		<h2 class="subject2a">Using K-9 Mail</h2>
+
+		<ol>
+			<li>Open the Google Play Store.</li>
+			<li>Find, install and open <strong>K-9 Mail</strong>.<br>
+				<p style="align:center;">
+					<img src="img/k9_email_icon.png" title="" width="200px"></p>
+			</li>
+			<li>Enter your full email address and password, as pictured below.<br>
+				<p style="align:center;">
+					<img src="img/k9_account_login.png" title="" width="200px"></p>
+			</li>
+			<li>Select <strong>IMAP</strong> for your account type.<br>
+				<p style="align:center;">
+					<img src="img/k9_account_type.png" title="" width="200px"></p>
+			</li>
+			<li>On the final account setup screen, enter the following information:
+				<ul>
+					<li><strong>Username</strong> - The email address to which you are trying to connect</li>
+					<li><strong>Password</strong> - The password to that email address</li>
+					<li><strong>IMAP server</strong> - www.thenu-congroup.com</li>
+					<li><strong>Port</strong> - 143</li>
+					<li><strong>Security Type</strong> - None</li>
+					<li><strong>IMAP path prefix</strong> - Leave blank</li>
+				</ul>
+				<p style="align:center;">
+					<img src="img/k9_account_settings.png" title="" width="200px"></p>
+			</li>
+			<li>Click the <strong>Continue</strong> and the email client will check your settings and connect to your account.</li>
+		</ol>
+	</section>
+	<section id="outlook" style="display:none">
+		<h2 class="subject2a">Using Outlook 2010</h2>
+
+		<ol>
+			<li>Open Outlook 2010.</li>
+			<li>Click on the <strong>File</strong> menu.</li>
+			<li>Click <strong>Add Account</strong>.</li>
+			<li id="step4">On the <em>Auto Account Setup</em> page, your name and email address will auto populate based on how you've logged into your computer. If these settings are correct, click <strong>Next</strong>.
+			<ul>
+				<li>If the auto-populated information is incorrect, then you have two options:
+				<ul>
+					<li>Go back to the <em>Auto Account Setup</em> page and correct the settings.</li>
+					<li>Reset the options on the <em>Auto Account Setup</em> page by clicking the <strong>Option</strong> button next to <em>Manually configure server settings</em> and then clicking the <strong>Option</strong> button next to <em>Email Accounts</em>.</li>
+				</ul>
+				Outlook will then perform an internet search to automatically find your email server settings.</li>
+			</ul>
+			</li>
+			<li>When prompted, provide the full email address and password for the email account being configured.</li>
+			<li>You will be informed that the setup is complete. Click <strong>Finish</strong> to finalize the process.</li>
+		</ol>
+	</section>
+	<br>
+	<br>
+	<p>------<br>Rio & Carlos</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+		// - Javascript File - Rio Weber
+		// - Show email set up devices
+
+		function show_iphone(){
+			$("#iphone").show();
+			$("#android").hide();
+			$("#k9").hide();
+			$("#outlook").hide();
+			$("#welcome").hide();
+		}
+		function show_android(){
+			$("#iphone").hide();
+			$("#android").show();
+			$("#k9").hide();
+			$("#outlook").hide();
+			$("#welcome").hide();
+		}
+		function show_k9(){
+			$("#iphone").hide();
+			$("#android").hide();
+			$("#k9").show();
+			$("#outlook").hide();
+			$("#welcome").hide();
+		}
+		function show_outlook(){
+			$("#iphone").hide();
+			$("#android").hide();
+			$("#k9").hide();
+			$("#outlook").show();
+			$("#welcome").hide();
+		}
+
+</script>
+</body>
