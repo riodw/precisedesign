@@ -199,7 +199,7 @@
             
             $catagory = str_replace('_', ' ', $folder);
             array_push($folders, $catagory);
-             
+            
             echo '
          <div class="row folders">
             <h1 style="color:#fff; text-align:center;">'. $catagory .'</h1>
@@ -221,7 +221,7 @@
                      </a>
                   </div>';
             }
-             
+            
             echo '
                </div>
             </div>';
@@ -288,8 +288,12 @@
                </div>
                <div class="footer-col col-md-4">
                   <h3>More About Us</h3>
-                  <p>Find out more. Call today. <br><span style="color:#00A5C7;">(347) 759-2585</span></p>
-                  <p style="min-width: 310px;">Email us.<br><span style="color:#00A5C7;">Aldemar@precisecreates.com </span></p>
+                  <p>Find out more. Call today.<br>
+                     <span style="color:#00A5C7;">(347) 759-2585</span>
+                  </p>
+                  <p style="min-width: 310px;">Email us.<br>
+                     <span style="color:#00A5C7;">aldemar@precisedesigninc.com</span>
+                  </p>
                </div>
             </div>
          </div>
