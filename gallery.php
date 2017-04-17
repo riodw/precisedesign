@@ -1,86 +1,106 @@
 <!DOCTYPE html>
 <!-- Created by Rio Weber 2015 -->
-<!-- The Nu/con Group -->
 <html lang="en">
 
 <head>
-    <title>Precise Design Inc.</title>
-    <!-- code for iPhone -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="keywords" content="Precise Design, Precise Design Inc., Design, Precise" />
+   <title>Precise Design Inc.</title>
+   <!-- code for iPhone -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta name="keywords" content="Precise Design, Precise Design Inc., Design, Precise" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Precise Design Inc.">
-    <meta name="author" content="Unaxy.com">
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Precise Design Inc.">
+   <meta name="author" content="Unaxy.com">
 
-    <!-- Favicon.png-->
-    <link rel="shortcut icon" href="favicon.jpg">
-    <!-- CSS ==========-->
-    <!-- Latest compiled and minfied CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+   <!-- Favicon.png-->
+   <link rel="shortcut icon" href="favicon.jpg">
+   <!-- CSS ==========-->
+   <!-- Latest compiled and minfied CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-    <!-- Font-Awesome -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+   <!-- Font-Awesome -->
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Fonts -->
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
 
-    <!-- CAROUSEL FILES -->
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="https://getbootstrap.com/examples/carousel/carousel.css">
+   <!-- CAROUSEL FILES -->
+   <!-- Custom styles for this template -->
+   <link rel="stylesheet" type="text/css" href="https://getbootstrap.com/examples/carousel/carousel.css">
 
-    <!-- MY CUSTOM CSS-->
-    <link rel="stylesheet" type="text/css" href="css/precisedesign.css">
+   <!-- MY CUSTOM CSS-->
+   <link rel="stylesheet" type="text/css" href="css/precisedesign.css">
 
-    <!-- JAVASCRIPT ===== Latest compiled and minified JavaScript -->
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    
-    <style>
-         #links div {
-            width: 75px;
-            height: 75px;
-            overflow: hidden;
-            float: left;
-         }
-         
-         #links div img {
-            height: 100%;
-         }
-         .folders {
-            display: none;
-         }
-         .folders:first-of-type {
-            display: block;
-         }
-         .gallery {
-            display: inline-block;
-            margin-top: 20px;
-         }
-         .thumbnail {
-            max-height: 320px;
-            max-width: 320px;
-         }
-         .thumbnail img {
-            overflow: hidden;
-            max-height: 200px;
-            width: 100%;
-            /*max-width: 250px;*/
-         }
-      </style>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <!-- JAVASCRIPT ===== Latest compiled and minified JavaScript -->
+   <!-- jQuery -->
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <!-- Bootstrap Core JavaScript -->
+   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+   <style>
+      #links div {
+         width: 75px;
+         height: 75px;
+         overflow: hidden;
+         float: left;
+      }
+      
+      #links div img {
+         height: 100%;
+      }
+      
+      .folders {
+         display: none;
+      }
+      
+      .folders:first-of-type {
+         display: block;
+      }
+      
+      .gallery {
+         display: inline-block;
+         margin-top: 20px;
+      }
+      
+      .thumbnail {
+         max-height: 320px;
+         max-width: 320px;
+      }
+      
+      .thumbnail img {
+         overflow: hidden;
+         max-height: 200px;
+         width: 100%;
+         /*max-width: 250px;*/
+      }
+   </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+   <script>
+      // Google Analytics
+      (function(i, s, o, g, r, a, m) {
+         i['GoogleAnalyticsObject'] = r;
+         i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+         }, i[r].l = 1 * new Date();
+         a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+         a.async = 1;
+         a.src = g;
+         m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-61756765-3', 'auto');
+      ga('send', 'pageview');
+   </script>
 </head>
 
 <body id="page-top" class="index">
@@ -138,8 +158,8 @@
          </section>
       </div>
    </div>
-   
-   
+
+
    <div id="main-wrapper" class="container" style="padding: 8em 0em 6em 0em;">
       <!-- The container for the list of example images -->
       <div class="container All_Folders">
@@ -212,133 +232,117 @@
          
       </div>
       <script type="text/javascript">
-      // PHP to folders string
+         // PHP to folders string
          var folders = "<?php echo $folders; ?>";
          folders = folders.split(',');
          // Append buttons to Folder
-         for(var i=0; i < folders.length; i++) {
-            $('#folders').append('<div style="display:inline-block;">'
-               + '<button type="button" class="btn btn-default galleryButtons">' + folders[i] + '</button>');
-               + '</div>';
+         for (var i = 0; i < folders.length; i++) {
+            $('#folders').append('<div style="display:inline-block;">' +
+               '<button type="button" class="btn btn-default galleryButtons">' + folders[i] + '</button>'); +
+            '</div>';
          }
-         
+      
          console.log(folders);
          $('#folders button').click(function() {
             var number = $(this).parent().index();
             $('.All_Folders').children().hide();
-            $( '.All_Folders .folders:nth-child('+ (number+1) +')' ).show();
+            $('.All_Folders .folders:nth-child(' + (number + 1) + ')').show();
          });
       </script>
       <!-- container / end -->
    </div>
-
+   
    <div class="container" style="text-align:center; background-color:#fff; margin: 0 auto; padding: 20px; clear:both; width:100%">
       <a href="index.html#contact" type="button" class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i></i> Send Us a Message</a>
    </div>
-
-
-    <!-- FOOTER ============================= FOOTER ========== FOOTER =====================================================
-Location | Connect with us (social icons)| About Example
-======
-Google Map
-======
-Copy Right =========================-->
-    <footer class="text-center">
-        <div class="footer-above" style="box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);z-index:1000;">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>45-52 164th Street<br>Flushing, NY 11358 US</p>
-                        <p><a href="https://www.google.com/maps/place/45-52+164th+St,+Flushing,+NY+11358" target="_new">Google Map It »</a></p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Connect With Us</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/precisecreates/" class="btn-social btn-outline" target="new"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://instagram.com/preciseny" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>More About Us</h3>
-                        <p>Find out more. Call today. <br><span style="color:#00A5C7;">(347) 759-2585</span></p>
-                        <p style="min-width: 310px;">Email us.<br><span style="color:#00A5C7;">Aldemar@precisecreates.com </span></p>
-                    </div>
-                </div>
+   
+   
+   <!-- FOOTER ============================= FOOTER ========== FOOTER =====================================================
+   Location | Connect with us (social icons)| About Example
+   ======
+   Google Map
+   ======
+   Copy Right =========================-->
+   <footer class="text-center">
+      <div class="footer-above" style="box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);z-index:1000;">
+         <div class="container">
+            <div class="row">
+               <div class="footer-col col-md-4">
+                  <h3>Location</h3>
+                  <p>45-52 164th Street<br>Flushing, NY 11358 US</p>
+                  <p><a href="https://www.google.com/maps/place/45-52+164th+St,+Flushing,+NY+11358" target="_new">Google Map It »</a></p>
+               </div>
+               <div class="footer-col col-md-4">
+                  <h3>Connect With Us</h3>
+                  <ul class="list-inline">
+                     <li>
+                        <a href="https://www.facebook.com/precisecreates/" class="btn-social btn-outline" target="new"><i class="fa fa-fw fa-facebook"></i></a>
+                     </li>
+                     <li>
+                        <a href="https://instagram.com/preciseny" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+                     </li>
+                     <li>
+                        <a href="https://www.linkedin.com/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer-col col-md-4">
+                  <h3>More About Us</h3>
+                  <p>Find out more. Call today. <br><span style="color:#00A5C7;">(347) 759-2585</span></p>
+                  <p style="min-width: 310px;">Email us.<br><span style="color:#00A5C7;">Aldemar@precisecreates.com </span></p>
+               </div>
             </div>
-        </div>
-        <!-- Gallery -->
-
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12" style="color:#666">
-                        <p>Precise Design Inc.</p>
-                        (347) 759-2585
-                        <br>45-52 164th Street, Flushing, NY 11358 US
-                        <br>Copyright &copy; Precise Design Inc. <span id="dateTimeValue2"></span>
-                        <!-- Date -->
-                        <script type="text/javascript">
-                            window.onload = function() {
-                                var dateYear = new Date();
-                                var formattedDateYear = dateYear.getFullYear()
-                                var divObjectYear = document.getElementById("dateTimeValue2");
-                                divObjectYear.innerHTML = formattedDateYear;
-                            }
-                        </script>
-                    </div>
-                </div>
+         </div>
+      </div>
+      <!-- Gallery -->
+   
+      <div class="footer-below">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12" style="color:#666">
+                  <p>Precise Design Inc.</p>
+                  (347) 759-2585
+                  <br>45-52 164th Street, Flushing, NY 11358 US
+                  <br>Copyright &copy; Precise Design Inc. <span id="dateTimeValue2"></span>
+                  <!-- Date -->
+                  <script type="text/javascript">
+                     window.onload = function() {
+                        var dateYear = new Date();
+                        var formattedDateYear = dateYear.getFullYear()
+                        var divObjectYear = document.getElementById("dateTimeValue2");
+                        divObjectYear.innerHTML = formattedDateYear;
+                     }
+                  </script>
+               </div>
             </div>
-        </div>
-    </footer>
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div id="scroll-top" class="scroll-top page-scroll visible-xs visble-sm">
-        <a id="scroll-topp" class="btn btn-primary" href="#page-top" style="display:none">
-            <i id="scroll-toppp" class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-
-    <!-- From WAngle -->
-    <!--<script src="js/jquery.dropotron.min.js"></script>-->
-
-    <script>
-    // For image gallery flipper
-        $(document).ready(function() {
-            //FANCYBOX
-            $(".fancybox").fancybox({
-                openEffect: "none",
-                closeEffect: "none"
-            });
-        });
-    </script>
-
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-61756765-3', 'auto');
-        ga('send', 'pageview');
-    </script>
+         </div>
+      </div>
+   </footer>
+   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+   <div id="scroll-top" class="scroll-top page-scroll visible-xs visble-sm">
+      <a id="scroll-topp" class="btn btn-primary" href="#page-top" style="display:none">
+         <i id="scroll-toppp" class="fa fa-chevron-up"></i>
+      </a>
+   </div>
+   
+   
+   <!-- Custom Theme JavaScript -->
+   <script src="js/freelancer.js"></script>
+   
+   <!-- From WAngle -->
+   <!--<script src="js/jquery.dropotron.min.js"></script>-->
+   
+   <script>
+      // For image gallery flipper
+      $(document).ready(function() {
+         //FANCYBOX
+         $(".fancybox").fancybox({
+            openEffect: "none",
+            closeEffect: "none"
+         });
+      });
+   </script>
+   
 </body>
 
 </html>
