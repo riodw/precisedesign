@@ -649,11 +649,11 @@
                         var fullDate = new Date().toLocaleString();
 
                         reviews.child(domain).push({
-                           'title': reviewTitle.val(),
-                           'review': reviewText.val(),
-                           'name': reviewName.val(),
+                           'title': reviewTitle.val().replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'),
+                           'review': reviewText.val().replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'),
+                           'name': reviewName.val().replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'),
                            'stars': stars,
-                           'time': fullDate
+                           'time': fullDate.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'),
                         });
 
                         reviewText.val('');
