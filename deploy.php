@@ -36,11 +36,11 @@
 </head>
 <body style="background-color: #000000; color: #FFFFFF; font-weight: bold; padding: 0 10px;">
 <pre>
- .  ____  .    ____________________________
- |/      \|   |                            |
-[| <span style="color: #FF0000;">&hearts;    &hearts;</span> |]  | Git Deployment Script v0.1 |
- |___==___|  /              &copy; oodavid 2012 |
-              |____________________________|
+ ____________________________
+|                            |
+| Git Deployment Script v0.1 |
+|                 riodw 2017 |
+|____________________________|
 
 <?php echo $output; ?>
 </pre>
