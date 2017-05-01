@@ -516,10 +516,10 @@ footer a:active {
 	width: 78px;
 	height: 78px;
 	border: 1px solid #e5e5e5;
-	margin-bottom: 8px;
 }
 
 .review .person .reviewer {
+	color: #EEE;
 	word-wrap: break-word;
 }
 
@@ -528,8 +528,7 @@ footer a:active {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 60px 60px;
-	
-	/*margin: 3px auto;*/
+	margin: 3px auto;
 }
 
 .review .balloon {
@@ -588,6 +587,36 @@ footer a:active {
 	.review .balloon {
 		margin-left: 0;
 	}
+}
+
+#showReview {
+	background-color: #fff;
+	border-radius: 0;
+}
+
+
+/* THE DUMB WAY */
+/* THE DUMB WAY */
+/* THE DUMB WAY */
+/* THE DUMB WAY */
+
+.review .person {
+	width: 180px;
+	position: relative;
+	top: 0;
+	text-align: center;
+	margin: 10px auto 0 auto;
+}
+
+.review .balloon {
+	text-align: left;
+	width: auto;
+	margin-right: 0;
+	background-color: #eee;
+	border: 1px solid #e5e5e5;
+	position: relative;
+	padding: 15px 20px;
+	margin-left: 0px;
 }
 
 
